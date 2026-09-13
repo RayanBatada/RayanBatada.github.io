@@ -19,7 +19,7 @@
 
 		<meta
 			property="og:description"
-			content="Rayan Batada's portfolio featuring GT Movies Store, a full-stack Django web application."
+			content="Rayan Batada's portfolio featuring the GT Movies Store Django project."
 		/>
 
 		<meta property="og:type" content="website" />
@@ -67,7 +67,7 @@
 			<div id="main">
 
 
-				<!-- HOME -->
+				<!-- Home -->
 				<article id="home" class="panel intro">
 
 					<header>
@@ -79,10 +79,11 @@
 						</p>
 
 						<p>
-							Welcome to my portfolio. This site highlights
-							GT Movies Store, a full-stack Django web
-							application that I developed while learning
-							Django web development.
+							Welcome to my portfolio. My main project on this
+							site is GT Movies Store, a Django web application
+							I built while learning how Django works and how
+							the different parts of a web application connect
+							together.
 						</p>
 
 					</header>
@@ -103,7 +104,7 @@
 				</article>
 
 
-				<!-- PROJECT -->
+				<!-- Project -->
 				<article id="project" class="panel">
 
 					<header>
@@ -114,30 +115,29 @@
 					<h3>Project Overview</h3>
 
 					<p>
-						GT Movies Store is a full-stack web application
-						developed with Django. Users can browse a movie
-						catalog, search for movies, create accounts,
-						write and manage reviews, use a shopping cart,
-						purchase movies, and view their previous orders.
+						GT Movies Store is a Django website where users can
+						browse movies, search for movies, create an account,
+						write reviews, add movies to a shopping cart, make
+						purchases, and look at their previous orders.
 					</p>
 
 					<p>
-						The project also includes Django's administrative
-						interface for managing users, movies, reviews,
-						orders, and purchase items.
+						The project also uses Django Admin. An administrator
+						can manage users, movies, reviews, orders, and the
+						items that belong to each order.
 					</p>
 
 					<p>
-						For the additional project requirement, I extended
-						the review system with inappropriate-review
-						reporting. A logged-in user can report another
-						user's review. Reported reviews are removed from
-						the public movie page but remain stored in the
-						database so an administrator can still inspect them.
+						I also added a review reporting feature for the
+						additional project requirement. A logged-in user can
+						report a review written by another user. Once the
+						review is reported, it no longer shows on the public
+						movie page, but it is still stored in the database so
+						an administrator can see it.
 					</p>
 
 
-					<h3>Technologies</h3>
+					<h3>Technologies Used</h3>
 
 					<p>
 						Python, Django, HTML, CSS, Bootstrap, MySQL,
@@ -160,80 +160,79 @@
 					<hr />
 
 
-					<h3>Features and User Stories</h3>
+					<h3>Main Features</h3>
 
 					<ul>
 
 						<li>
-							<strong>About:</strong>
-							Users can view information about the Movies Store.
+							<strong>About Page:</strong>
+							Users can read information about the Movies Store.
 						</li>
 
 						<li>
-							<strong>Accounts:</strong>
+							<strong>User Accounts:</strong>
 							Users can sign up, log in, and log out.
 						</li>
 
 						<li>
 							<strong>Movies:</strong>
-							Users can browse database-backed movie records
-							and open individual movie pages.
+							Users can browse movies that are stored in the
+							database and open a page for each movie.
 						</li>
 
 						<li>
 							<strong>Search:</strong>
-							Users can search for movies by name.
+							Users can search for a movie by its name.
 						</li>
 
 						<li>
 							<strong>Shopping Cart:</strong>
-							Users can select movie quantities, add movies
-							to the cart, view the total, and clear the cart.
+							Users can choose a quantity, add movies to the
+							cart, see the total, and clear the cart.
 						</li>
 
 						<li>
 							<strong>Reviews:</strong>
-							Authenticated users can create reviews.
-							Review authors can edit and delete their own
-							reviews.
+							Logged-in users can write reviews. Users can also
+							edit or delete reviews that they wrote themselves.
 						</li>
 
 						<li>
 							<strong>Purchases:</strong>
-							Authenticated users can purchase the contents
-							of their cart.
+							Logged-in users can purchase the movies currently
+							in their cart.
 						</li>
 
 						<li>
 							<strong>Order History:</strong>
-							Users can view their previous orders and
-							purchased items.
+							Users can see orders they have made before and
+							the movies included in those orders.
 						</li>
 
 						<li>
-							<strong>Responsive Interface:</strong>
-							Bootstrap is used to adapt the application
-							to different screen sizes.
+							<strong>Responsive Design:</strong>
+							The site uses Bootstrap so the layout can adjust
+							to smaller screen sizes.
 						</li>
 
 						<li>
 							<strong>Deployment:</strong>
-							The application is publicly deployed using
+							The website is deployed online using
 							PythonAnywhere.
 						</li>
 
 						<li>
-							<strong>Administration:</strong>
-							Django Admin provides management of users,
-							movies, reviews, orders, and items.
+							<strong>Admin:</strong>
+							Django Admin can be used to manage users, movies,
+							reviews, orders, and items.
 						</li>
 
 						<li>
 							<strong>Review Reporting:</strong>
-							Authenticated users can report reviews created
-							by another user. Reported reviews disappear
-							from the public site while remaining available
-							to administrators.
+							A logged-in user can report somebody else's
+							review. Reported reviews are hidden from the
+							public movie page but are still available to
+							the administrator.
 						</li>
 
 					</ul>
@@ -241,7 +240,7 @@
 				</article>
 
 
-				<!-- PROCESS -->
+				<!-- Process -->
 				<article id="process" class="panel">
 
 					<header>
@@ -249,202 +248,240 @@
 					</header>
 
 					<p>
-						I developed GT Movies Store by following
+						I built GT Movies Store while working through
 						<em>Django 5 for the Impatient, Second Edition</em>.
-						The application grew chapter by chapter, with each
-						part introducing another Django concept.
+						The project started out pretty simple, and each chapter
+						added another part of the application. This made it
+						easier for me to understand what each Django feature
+						was doing before everything was connected together.
 					</p>
 
 
-					<h3>Chapters 1–2 — Django Setup and Project Structure</h3>
+					<h3>Chapters 1-2: Setting Up Django</h3>
 
 					<p>
-						I began by creating the Django project and learning
-						the Model-View-Template architecture. I created the
-						Home application and built the Home and About pages.
-						This introduced me to project URLs, application URLs,
-						views, and templates.
-					</p>
-
-
-					<h3>Chapter 3 — Base Template and Styling</h3>
-
-					<p>
-						I created a reusable <code>base.html</code> template
-						and added Bootstrap, custom CSS, static images,
-						a navigation bar, and a footer.
+						I started by creating the Django project and learning
+						the basic project structure. I made the Home app and
+						created the Home and About pages.
 					</p>
 
 					<p>
-						I also debugged several formatting problems caused
-						by Bootstrap links, CSS classes, and Django template
-						expressions being accidentally split across lines.
+						This was where I first worked with URLs, views, and
+						templates and started to understand how a request
+						moves through a Django application.
 					</p>
 
 
-					<h3>Chapter 4 — Movies Application</h3>
+					<h3>Chapter 3: Templates and Styling</h3>
 
 					<p>
-						I created the Movies application and initially used
-						a Python list containing movie information. I built
-						the movie catalog and individual movie pages before
-						introducing database models.
-					</p>
-
-
-					<h3>Chapters 5–6 — Models and QuerySets</h3>
-
-					<p>
-						I created the Movie model, learned how Django
-						migrations work, installed Pillow for image uploads,
-						created a superuser, and registered movies in
-						Django Admin.
+						I created a shared <code>base.html</code> file so
+						the pages could use the same navigation bar, footer,
+						Bootstrap setup, and CSS.
 					</p>
 
 					<p>
-						I then replaced the temporary movie data with
-						database-backed QuerySets and implemented movie
-						search using <code>name__icontains</code>.
+						I also worked with static files and images. I had to
+						fix a few layout and template problems when some HTML
+						and Django template code had been split across
+						different lines.
 					</p>
 
 
-					<h3>Chapter 7 — Database Configuration</h3>
+					<h3>Chapter 4: Movies App</h3>
 
 					<p>
-						I configured MySQL for my local development
-						environment and learned how Django can work with
-						different database engines.
+						I created the Movies app and first used a normal
+						Python list to hold the movie information.
 					</p>
 
 					<p>
-						I also customized Django Admin so movies could be
-						ordered and searched by name. During this stage,
-						I debugged database connection and database-creation
-						problems.
+						I made the movie list page and individual movie pages.
+						This helped me get used to passing information from a
+						view into a template before adding the database.
 					</p>
 
 
-					<h3>Chapter 8 — Authentication</h3>
+					<h3>Chapters 5-6: Models and the Database</h3>
 
 					<p>
-						I created the Accounts application and implemented
-						signup, login, and logout using Django's built-in
-						authentication system.
+						I created the Movie model and learned how Django
+						migrations turn model changes into database changes.
+						I also installed Pillow so movies could have uploaded
+						images.
 					</p>
 
 					<p>
-						I customized the signup form, validation errors,
-						and navigation bar so the interface changes
-						depending on the user's authentication state.
-					</p>
-
-
-					<h3>Chapter 9 — Reviews</h3>
-
-					<p>
-						I created the Review model and implemented Create,
-						Read, Update, and Delete operations.
+						After that, I stopped using the temporary Python movie
+						list and started loading the movie information from
+						the database with Django QuerySets.
 					</p>
 
 					<p>
-						I added authorization checks so users can only
+						I also added the movie search feature using
+						<code>name__icontains</code>.
+					</p>
+
+
+					<h3>Chapter 7: Database Setup and Admin</h3>
+
+					<p>
+						I set up MySQL for my local version of the project.
+						This part took some troubleshooting because the
+						database needed to be created and configured correctly
+						before Django could connect to it.
+					</p>
+
+					<p>
+						I also worked more with Django Admin and made it
+						possible to search and organize movies from the
+						admin page.
+					</p>
+
+
+					<h3>Chapter 8: User Accounts</h3>
+
+					<p>
+						I created the Accounts app and added signup, login,
+						and logout.
+					</p>
+
+					<p>
+						I used Django's built-in authentication system and
+						customized the signup form so it matched the rest of
+						the site better. I also changed the navigation bar so
+						different options show depending on whether the user
+						is logged in.
+					</p>
+
+
+					<h3>Chapter 9: Reviews</h3>
+
+					<p>
+						I created the Review model and connected reviews to
+						both a movie and a user.
+					</p>
+
+					<p>
+						I then added the ability to create, view, edit, and
+						delete reviews. I also added checks so users can only
 						edit or delete reviews that belong to them.
 					</p>
 
 
-					<h3>Chapter 10 — Shopping Cart</h3>
+					<h3>Chapter 10: Shopping Cart</h3>
 
 					<p>
-						I created the Cart application and learned how
-						Django sessions can preserve data between requests.
-						The cart stores movie IDs and quantities inside the
-						user's session.
+						I created the Cart app and used Django sessions to
+						store the movies and quantities in a user's cart.
 					</p>
 
 					<p>
-						I implemented adding movies, displaying quantities,
-						calculating totals, and clearing the cart.
-					</p>
-
-
-					<h3>Chapters 11–12 — Orders and Purchases</h3>
-
-					<p>
-						I created Order and Item models to permanently store
-						purchase information.
+						I added the ability to put movies in the cart, choose
+						a quantity, calculate the total, view the cart, and
+						clear everything from it.
 					</p>
 
 					<p>
-						Completing a purchase creates an Order and its Item
-						records, clears the session cart, and makes the
-						purchase available through the user's Orders page.
+						This part helped me understand the difference between
+						temporary information stored in a session and
+						information that is saved permanently in the database.
 					</p>
 
 
-					<h3>Chapter 13 — Deployment</h3>
+					<h3>Chapters 11-12: Purchases and Orders</h3>
 
 					<p>
-						I used Git and GitHub to transfer the project to
-						PythonAnywhere and configured the virtual environment,
-						WSGI application, database migrations, allowed hosts,
-						static files, and media files.
+						I created the Order and Item models so purchases could
+						be saved permanently instead of only existing in the
+						shopping cart.
 					</p>
 
 					<p>
-						My local development environment used MySQL. My
-						PythonAnywhere environment uses SQLite because of the
-						database options available with the hosting account.
-					</p>
-
-					<p>
-						Deployment also required me to work through GitHub
-						authentication, repository access, static-file
-						collection, and PythonAnywhere configuration.
+						When a user makes a purchase, the application creates
+						an Order and its Item records. The cart is then cleared.
+						The user can later open the Orders page to see what
+						they purchased.
 					</p>
 
 
-					<h3>Additional Requirement — Review Reporting</h3>
+					<h3>Chapter 13: Deployment</h3>
 
 					<p>
-						After completing the functionality from the textbook,
-						I implemented the review-reporting requirement.
+						I used Git and GitHub to move the project to
+						PythonAnywhere so the site could be available online.
+					</p>
+
+					<p>
+						I had to set up the Python environment, WSGI file,
+						allowed hosts, migrations, static files, and media
+						files on PythonAnywhere.
+					</p>
+
+					<p>
+						My local version uses MySQL. The deployed version uses
+						SQLite because MySQL was not available with the
+						PythonAnywhere account I was using.
+					</p>
+
+					<p>
+						I also ran into issues with GitHub access, static
+						files, and differences between my local computer and
+						the server. Fixing those problems gave me a better
+						understanding of what is different between developing
+						a site locally and actually deploying it.
+					</p>
+
+
+					<h3>Review Reporting Feature</h3>
+
+					<p>
+						After finishing the main project, I added the review
+						reporting feature that was required for the assignment.
 					</p>
 
 					<p>
 						I added a <code>reported</code> field to the Review
-						model and created a reporting URL, view, and form.
-						The movie page filters reported reviews from public
-						display without deleting them from the database.
+						model. I also created a URL and view for reporting a
+						review and added a Report button to the movie page.
 					</p>
 
 					<p>
-						I also added authorization so users cannot report
-						their own reviews.
+						The movie page only displays reviews that have not
+						been reported. A reported review stays in the database
+						and can still be seen in Django Admin.
+					</p>
+
+					<p>
+						I also added a check on the server side so users
+						cannot report their own reviews.
 					</p>
 
 
 					<h3>What I Learned</h3>
 
 					<p>
-						Building the application incrementally helped me
-						understand how Django's URLs, views, templates,
-						models, migrations, authentication, sessions,
-						and deployment work together.
+						The biggest thing I learned from this project was how
+						all the parts of Django work together. At the start,
+						URLs, views, templates, models, authentication, and
+						sessions felt like separate topics. By the end of the
+						project, I had a much better idea of how they connect
+						to build one application.
 					</p>
 
 					<p>
-						I also learned that debugging is a major part of
-						web development. During the project I worked through
-						template syntax issues, database errors, migrations,
-						authentication issues, GitHub authentication,
-						static-file configuration, and differences between
-						local and deployed environments.
+						I also got a lot more experience debugging. Some of
+						the problems I worked through involved template syntax,
+						database setup, migrations, login and logout code,
+						GitHub authentication, static files, and deployment.
+						Fixing those issues was one of the more useful parts
+						of the project for me.
 					</p>
 
 				</article>
 
 
-				<!-- DEMO -->
+				<!-- Demo -->
 				<article id="demo" class="panel">
 
 					<header>
@@ -452,17 +489,15 @@
 					</header>
 
 					<p>
-						This demonstration walks through GT Movies Store
-						from both a regular user's perspective and an
-						administrator's perspective.
+						In this demo, I go through the main parts of GT Movies
+						Store as both a regular user and an administrator.
 					</p>
 
 					<p>
-						The demonstration includes authentication, movie
-						browsing and search, shopping-cart functionality,
-						reviews, purchases, order history, review reporting,
-						Django Admin, responsive behavior, and the publicly
-						deployed application.
+						The demo includes signup and login, movie browsing,
+						search, the shopping cart, reviews, purchases, order
+						history, review reporting, Django Admin, responsive
+						design, and the deployed website.
 					</p>
 
 					<p>
@@ -477,7 +512,7 @@
 				</article>
 
 
-				<!-- CONTACT -->
+				<!-- Contact -->
 				<article id="contact" class="panel">
 
 					<header>
